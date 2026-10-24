@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplikasi Cuaca Simpel</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="card">
+        <div class="search">
+            <input type="text" id="cityInput" placeholder="Ketik nama kota..." spellcheck="false">
+            <button id="searchBtn">Cari</button>
+        </div>
+
+        <div class="weather" id="weatherInfo" style="display: none;">
+            <img id="weatherIcon" src="" alt="Ikon Cuaca" class="weather-icon">
+            <h2 id="cityName">Jakarta</h2>
+            <h1 id="temp">28°C</h1>
+            <p id="description">Cerah Berawan</p>
+
+            <div class="details">
+                <div class="col">
+                    <p class="label">Kelembapan</p>
+                    <p id="humidity" class="value">--%</p>
+                </div>
+                <div class="col">
+                    <p class="label">Kecepatan Angin</p>
+                    <p id="wind" class="value">-- m/s</p>
+                </div>
+            </div>
+        </div>
+
+        <p id="errorMessage" class="error"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
